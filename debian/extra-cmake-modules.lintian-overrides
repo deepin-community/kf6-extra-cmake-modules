@@ -1,0 +1,2 @@
+# Let’s not add python3 to all builds depending on extra-cmake-modules, developers would probably have a python interpreter installed anyway
+extra-cmake-modules: python3-script-but-no-python3-dep /usr/bin/python3 (does not satisfy python3:any | python3-minimal:any) [usr/share/ECM/kde-modules/kde-git-commit-hooks/json-schema.py]
