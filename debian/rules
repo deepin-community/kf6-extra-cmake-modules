@@ -1,4 +1,15 @@
 #!/usr/bin/make -f
+# -*- makefile -*-
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 
 %:
-	dh $@
+	dh $@ --without build_stamp
+
+override_dh_auto_test:
+	# Disable dh_auto_test at build time
+	:
+
+execute_after_dh_fixperms-arch:
+	chmod -x $(CURDIR)/debian/extra-cmake-modules/usr/share/ECM/kde-modules/kde-git-commit-hooks/combined.schema.json.in.license
+	chmod -x $(CURDIR)/debian/extra-cmake-modules/usr/share/ECM/kde-modules/kde-git-commit-hooks/combined.schema.json.in
