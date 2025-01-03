@@ -1,2 +1,3 @@
 force_relative_paths.diff
 demote_unsupported_platform_error_to_a_warning.diff
+make_kde_package_app_templates_crosscompilate.patch
