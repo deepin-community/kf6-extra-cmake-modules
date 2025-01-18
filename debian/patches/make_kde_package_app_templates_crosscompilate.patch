@@ -1,0 +1,26 @@
+Subject: Fix cross compilation
+Author: Helmut Grohne <helmut@subdivi.de>
+Bug-Debian: #1084874
+Last-Update: 2024-10-10
+
+
+--- kf6-extra-cmake-modules-6.6.0.orig/kde-modules/KDEPackageAppTemplates.cmake
++++ kf6-extra-cmake-modules-6.6.0/kde-modules/KDEPackageAppTemplates.cmake
+@@ -64,17 +64,11 @@ Deprecated:
+ 
+ Multiple templates can be passed at once.
+ 
+-This function does nothing when cross-compiling.
+-
+ 
+ Since 5.18
+ #]=======================================================================]
+ 
+ function(kde_package_app_templates)
+-    if (CMAKE_CROSSCOMPILING)
+-        return()
+-    endif()
+-
+     set(_oneValueArgs INSTALL_DIR)
+     set(_multiValueArgs TEMPLATES)
+     cmake_parse_arguments(ARG "" "${_oneValueArgs}" "${_multiValueArgs}" ${ARGN} )
