@@ -1,3 +1,38 @@
+kf6-extra-cmake-modules (6.10.0-1) unstable; urgency=medium
+
+  [ Aurélien COUDERC ]
+  * New upstream release (6.9.0).
+  * New upstream release (6.10.0).
+  * Update build-deps and deps with the info from cmake.
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Fri, 10 Jan 2025 23:20:19 +0100
+
+kf6-extra-cmake-modules (6.8.0-2) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Helmut Grohne ]
+  * Fix FTCBFS: Reduce Build-Depends. (Closes: #1022961)
+  * Enable kde_package_app_templates also for crosscompilation. (Closes: #1084874)
+
+ -- Sandro Knauß <hefee@debian.org>  Tue, 10 Dec 2024 23:41:30 +0100
+
+kf6-extra-cmake-modules (6.8.0-1) unstable; urgency=medium
+
+  [ Aurélien COUDERC ]
+  * New upstream release (6.8.0).
+  * Update build-deps and deps with the info from cmake.
+  * Release to unstable.
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Wed, 04 Dec 2024 13:46:57 +0100
+
+kf6-extra-cmake-modules (6.7.0-1) experimental; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+
+ -- Simon Quigley <tsimonq2@debian.org>  Sun, 03 Nov 2024 19:29:22 -0600
+
 kf6-extra-cmake-modules (6.6.0-2) unstable; urgency=medium
 
   [ Aurélien COUDERC ]
